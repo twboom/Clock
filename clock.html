@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock | Clock</title>
     <script src="js/tool.js"></script>
+    <link rel="stylesheet" href="css/clock.css">
 </head>
 <body>
-    <main>
-        <div id="clock"></div>
-    </main>
+    <!-- Clock container -->
+    <div id="clock"></div>
 
-
-    <!-- Demo/Debug script -->
+    <!-- Script to run the clock -->
     <script>
-        const myClock = new Clock(document.getElementById('clock'), {display: {hours: true, minutes: true, seconds: true}, precision: 10})
+        const config = {
+            display: {
+                hours: true,
+                minutes: true,
+                seconds: true
+            },
+            precision: 10
+        }
+        const myClock = new Clock(document.getElementById('clock'), config)
         myClock.create()
         myClock.start()
     </script>
