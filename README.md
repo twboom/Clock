@@ -1,2 +1,2 @@
-# Perip
-Perip is a multifunctional online clock!
+# Clock
+A multifunctinal online clock!
