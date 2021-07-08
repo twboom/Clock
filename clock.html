@@ -11,5 +11,13 @@
     <main>
         <div id="clock"></div>
     </main>
+
+
+    <!-- Demo/Debug script -->
+    <script>
+        const myClock = new Clock(document.getElementById('clock'), {display: {hours: true, minutes: true, seconds: true}, precision: 10})
+        myClock.create()
+        myClock.start()
+    </script>
 </body>
 </html>
