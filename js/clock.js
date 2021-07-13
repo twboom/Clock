@@ -21,19 +21,19 @@ class Clock {
         // Generating the required elements
         if (disp.hours) {
             const hours = document.createElement('span');
-            hours.classList = 'clock hours';
+            hours.classList = 'clock count hours';
             this.elements.hours = hours;
         };
 
         if (disp.minutes) {
             const minutes = document.createElement('span');
-            minutes.classList = 'clock minutes';
+            minutes.classList = 'clock count minutes';
             this.elements.minutes = minutes;
         };
 
         if (disp.seconds) {
             const seconds = document.createElement('span');
-            seconds.classList = 'clock seconds';
+            seconds.classList = 'clock count seconds';
             this.elements.seconds = seconds;
         };
 

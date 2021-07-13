@@ -24,9 +24,24 @@ div#clock {
     background-color: var(--background-color);
 }
 
-p.clock.container {
+p.container {
     font-size: var(--font-size);
     font-family: var(--font-family);
 
     margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    
+    /* Hide the dots */
+    span.seperator {
+        display: none;
+    }
+
+    /* Make it vertical */
+    span.count {
+        display: block
+    }
+
 }
