@@ -137,11 +137,35 @@ class Countdown {
 
         clearInterval(this.interval)
 
-    }
-
-
+    };
 
 };
+
+
+// Make the clock work
+function init() {
+
+    const target = parseInt((new URL(document.location)).searchParams.get('target'));
+    const config = {
+        display: {
+            hours: true,
+            minutes: true,
+            seconds: true,
+            milliseconds: true
+        },
+        precision: 10,
+        container: document.getElementById('clock')
+    }
+
+    const counter = new Countdown(target, config);
+    counter.create();
+
+    counter.start();
+
+
+}
+
+window.onload = init
 
 
 // Utility code
@@ -151,7 +175,6 @@ function msToTime(duration, precision) {
     let minutes = Math.floor((duration / (1000 * 60)) % 60);
     let hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
 
-    // return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
     return {
         hours: hours,
         minutes: minutes,
