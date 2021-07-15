@@ -52,8 +52,6 @@ class Countdown {
         // Adding the elements
         for (let i = 0; i < Object.values(this.elements).length; i++) {
 
-            console.log(cont.appendChild(Object.values(this.elements)[i]))
-
             if (i !== 0) {
                 const seperator = document.createElement('span');
                 seperator.classList = 'clock seperator';
