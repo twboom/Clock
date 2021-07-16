@@ -1,3 +1,4 @@
+// Clock class
 class Clock {
 
     constructor({parent, display}) {
@@ -80,3 +81,11 @@ class Clock {
     };
 
 };
+
+
+// Time class
+class Time {
+
+    constructor(type, config) {}
+
+}
