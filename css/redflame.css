@@ -1,0 +1,58 @@
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+:root {
+
+    --font-family: 'Bebas Neue';
+    --font-size: 35vw;
+    --color: #000000;
+    --background-color: #EAE2B7;
+
+}
+
+div#clock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #00000000;
+}
+
+p.container {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: white;
+
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    
+    /* Hide the dots */
+    span.seperator {
+        display: none;
+    }
+
+    /* Make it vertical */
+    span.count {
+        display: block
+    };
+
+}
