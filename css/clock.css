@@ -17,8 +17,10 @@ body {
 
     --font-family: 'Mulish';
     --font-size: 20vw;
-    --color: #000000;
-    --background-color: #EAE2B7;
+    /* --color: #000000;
+    --background-color: #EAE2B7; */
+    --color: white;
+    --background-color: black;
 
 }
 
