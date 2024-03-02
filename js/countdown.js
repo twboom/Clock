@@ -149,7 +149,7 @@ function init() {
             hours: true,
             minutes: true,
             seconds: true,
-            milliseconds: true
+            milliseconds: false
         },
         precision: 10,
         container: document.getElementById('clock')
