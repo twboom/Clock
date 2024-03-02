@@ -40,6 +40,7 @@ div#clock {
 p.container {
     font-size: var(--font-size);
     font-family: var(--font-family);
+    color: var(--color);
 
     margin: 0;
 }
